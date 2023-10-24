@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
+/* <!-- Google material fonts --> */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* .logo img {
+  height: 64px;
+} */
+
+/* Hamburger menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* Menu */
+
+.material-symbols-outlined {
+  font-size: 22px;
+  line-height: 17px;
+}
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+button {
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  font-size: 2.3em;
+}
+
+.dropdown > div,
+.sub-dropdown > div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown .menu a:hover {
+  color: #9b9b9b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* .navbar {
+    padding: 1em 1.5em;
+  } */
+  .menu-container {
+    background: #fff;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 100%;
+    /* overflow-y: hidden; */
+    overflow-y: auto;
+    transition: 0.3s ease-in-out;
+    /* Hide menu */
+    height: 0;
+  }
+
+  /* Width */
+  .mega-menu::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  .mega-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  .mega-menu::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  /* Handle on hover */
+  .mega-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .mega-menu {
+    padding: 0 1em 1em 1em;
+    height: 100%;
+    /* overflow-y: scroll; */
+    overflow-y: auto;
+  }
+  .mega-menu li {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .mega-menu li > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .menu li {
+    padding: 0 1em;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .menu a {
+    display: block;
+    margin: 0.8em 0;
+  }
+  .menu {
+    display: none;
+  }
+  /* Toggle class for Javascript */
+  .menu-show {
+    display: block;
+  }
+  .material-symbols-outlined {
+    transition: 0.3s;
+  }
+  /* Toggle class for javascript */
+  .icon-rotated {
+    transform: rotate(90deg);
+  }
+
+  .dropdown > div,
+  .nodropdown > div,
+  .sub-dropdown > div {
+    cursor: pointer;
+    padding: 0.5em;
+  }
+  .sub-menu {
+    font-size: 0.9em;
+    display: none;
+  }
+  /* Toggle class for Javascript */
+  .sub-menu-show {
+    display: block;
+  }
+  .dropdown:hover > div,
+  .sub-dropdown:hover > div {
+    background: #dbdbdb;
+  }
+  /* Toggle class for javascript */
+  .mega-menu-show {
+    /* height: 50vh; */
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .menu-container {
+    top: 127px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /*   .menu-container {
+    position: unset;
+    height: auto;
+    width: auto;
+  } */
+  .buttons {
+    display: none;
+  }
+  .navbar {
+    padding: 0 4.5rem;
+  }
+
+  .mega-menu > li {
+    padding: 0 0.5rem;
+  }
+  .mega-menu > li:last-child {
+    padding-right: 0;
+  }
+  .mega-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu {
+    background: #fff;
+    position: absolute;
+    /* top: 4.65em; */
+    /* left: 0; */
+    /* width: 100%; */
+    padding: 0 2em;
+    overflow-y: auto;
+    transition: 0.4s ease-in-out;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em; */
+  }
+
+  .menu.mega {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    right: 2%;
+    flex-wrap: nowrap;
+    min-width: 76%;
+    max-width: 96%;
+  }
+
+  .sub-dropdown > div span:first-child {
+    font-weight: bold;
+  }
+
+  .dropdown > div,
+  .nodropdown > div {
+    border-bottom: 3px #fff solid;
+    transition: 0.3s;
+  }
+
+  .dropdown:hover > div {
+    border-color: #000;
+  }
+
+  .dropdown li {
+    margin-top: 1em;
+  }
+  .dropdown li:last-child {
+    margin-bottom: 1em;
+  }
+
+  .sub-dropdown > div > .material-symbols-outlined {
+    display: none;
+  }
+
+  /* Width */
+  .menu::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  .menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  .menu::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  .menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* Hide menu */
+  .menu {
+    height: 0;
+  }
+  /* .dropdown .menu {
+    padding: 1em;
+  } */
+  .dropdown:hover .menu {
+    /* height: 50vh; */
+    height: auto;
+  }
+  .material-symbols-outlined.top {
+    transform: rotate(90deg);
+  }
+}
+@media screen and (min-width: 976px) {
+}
+@media screen and (min-width: 1440px) {
+}
