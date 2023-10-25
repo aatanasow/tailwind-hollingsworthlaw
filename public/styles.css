@@ -584,20 +584,8 @@ video {
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
-.absolute{
-  position: absolute;
-}
-
 .relative{
   position: relative;
-}
-
-.sticky{
-  position: sticky;
 }
 
 .mx-3{
@@ -652,10 +640,6 @@ video {
 
 .-rotate-90{
   --tw-rotate: -90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -793,14 +777,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 html {
   font-size: 18px;
 }
@@ -900,7 +876,7 @@ button {
 
 /* Responsive Design */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /* .navbar {
     padding: 1em 1.5em;
   } */
@@ -1030,6 +1006,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
   /*   .menu-container {
     position: unset;
     height: auto;
@@ -1041,11 +1020,11 @@ button {
   }
 
   .navbar {
-    padding: 0 4.5rem;
+    padding: 0 2.25rem;
   }
 
   .mega-menu > li {
-    padding: 0 0.5rem;
+    padding: 0 0.3rem;
   }
 
   .mega-menu > li:last-child {
@@ -1157,10 +1136,14 @@ button {
   }
 }
 
-@media screen and (min-width: 976px) {
-}
+@media screen and (min-width: 1280px) {
+  .mega-menu > li {
+    padding: 0 0.5rem;
+  }
 
-@media screen and (min-width: 1440px) {
+  .navbar {
+    padding: 0 4.5rem;
+  }
 }
 
 @media (min-width: 640px){
@@ -1169,70 +1152,70 @@ button {
   }
 }
 
-@media (min-width: 768px){
-  .md\:my-4{
+@media (min-width: 1024px){
+  .lg\:my-4{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
-  .md\:h-\[64px\]{
+  .lg\:h-\[64px\]{
     height: 64px;
   }
 
-  .md\:w-auto{
+  .lg\:w-auto{
     width: auto;
   }
 
-  .md\:flex-row{
+  .lg\:flex-row{
     flex-direction: row;
   }
 
-  .md\:flex-col{
+  .lg\:flex-col{
     flex-direction: column;
   }
 
-  .md\:items-end{
+  .lg\:items-end{
     align-items: flex-end;
   }
 
-  .md\:justify-start{
+  .lg\:justify-start{
     justify-content: flex-start;
   }
 
-  .md\:justify-center{
+  .lg\:justify-center{
     justify-content: center;
   }
 
-  .md\:gap-4{
+  .lg\:gap-4{
     gap: 1rem;
   }
 
-  .md\:bg-white{
+  .lg\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .md\:pb-\[15px\]{
+  .lg\:pb-\[15px\]{
     padding-bottom: 15px;
   }
 
-  .md\:pt-0{
+  .lg\:pt-0{
     padding-top: 0px;
   }
 
-  .md\:text-2xl{
+  .lg\:text-2xl{
     font-size: 1.722rem;
   }
 
-  .md\:text-5xl{
+  .lg\:text-5xl{
     font-size: 3.833rem;
   }
 
-  .md\:text-sm{
+  .lg\:text-sm{
     font-size: 0.778rem;
   }
 
-  .md\:text-xl{
+  .lg\:text-xl{
     font-size: 1.333rem;
   }
 }
