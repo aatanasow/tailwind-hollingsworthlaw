@@ -13,11 +13,14 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
-
-/* .logo img {
-  height: 64px;
-} */
-
+.hero-wrap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0) 75%);
+}
 /* Hamburger menu */
 
 .hamburger {

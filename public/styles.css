@@ -584,8 +584,16 @@ video {
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
+}
+
+.top-2{
+  top: 16px;
 }
 
 .mx-1{
@@ -596,10 +604,6 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.mr-3{
-  margin-right: 24px;
 }
 
 .mt-1{
@@ -626,8 +630,20 @@ video {
   height: 40px;
 }
 
+.h-\[2px\]{
+  height: 2px;
+}
+
 .h-full{
   height: 100%;
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
+.w-19{
+  width: 152px;
 }
 
 .w-full{
@@ -671,8 +687,12 @@ video {
   gap: 8px;
 }
 
-.rounded-full{
-  border-radius: 9999px;
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.border-0{
+  border-width: 0px;
 }
 
 .bg-cGrey-5{
@@ -700,18 +720,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-3{
-  padding: 24px;
-}
-
 .px-3{
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.px-6{
-  padding-left: 48px;
-  padding-right: 48px;
+.px-4{
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .py-1{
@@ -719,16 +735,17 @@ video {
   padding-bottom: 8px;
 }
 
-.pt-2{
+.py-2{
   padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.pb-3{
+  padding-bottom: 24px;
 }
 
 .text-center{
   text-align: center;
-}
-
-.align-baseline{
-  vertical-align: baseline;
 }
 
 .font-accent{
@@ -767,6 +784,10 @@ video {
   line-height: .75rem;
 }
 
+.leading-\[1\.1\]{
+  line-height: 1.1;
+}
+
 .leading-tight{
   line-height: 1.25;
 }
@@ -774,6 +795,11 @@ video {
 .text-cGrey-80{
   --tw-text-opacity: 1;
   color: rgb(53 65 73 / var(--tw-text-opacity));
+}
+
+.text-cOrange-10{
+  --tw-text-opacity: 1;
+  color: rgb(252 250 246 / var(--tw-text-opacity));
 }
 
 .text-cOrange-120{
@@ -794,9 +820,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* .logo img {
-  height: 64px;
-} */
+.hero-wrap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0) 75%);
+}
 
 /* Hamburger menu */
 
@@ -1158,6 +1189,11 @@ button {
   }
 }
 
+.hover\:bg-cOrange-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 202 163 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:h-6{
     height: 48px;
@@ -1165,8 +1201,16 @@ button {
 }
 
 @media (min-width: 768px){
+  .md\:mt-3{
+    margin-top: 24px;
+  }
+
   .md\:h-7{
     height: 56px;
+  }
+
+  .md\:w-3\/5{
+    width: 60%;
   }
 }
 
@@ -1176,12 +1220,12 @@ button {
     margin-bottom: 16px;
   }
 
-  .lg\:mt-5{
-    margin-top: 40px;
-  }
-
   .lg\:mr-3{
     margin-right: 24px;
+  }
+
+  .lg\:mt-5{
+    margin-top: 40px;
   }
 
   .lg\:h-8{
@@ -1202,10 +1246,6 @@ button {
 
   .lg\:items-end{
     align-items: flex-end;
-  }
-
-  .lg\:justify-start{
-    justify-content: flex-start;
   }
 
   .lg\:justify-center{
@@ -1243,8 +1283,38 @@ button {
 }
 
 @media (min-width: 1280px){
+  .xl\:mt-1{
+    margin-top: 8px;
+  }
+
+  .xl\:mt-10{
+    margin-top: 80px;
+  }
+
   .xl\:mt-8{
     margin-top: 64px;
+  }
+
+  .xl\:flex-col-reverse{
+    flex-direction: column-reverse;
+  }
+
+  .xl\:px-6{
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .xl\:py-3{
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .xl\:pb-6{
+    padding-bottom: 48px;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.722rem;
   }
 
   .xl\:text-5xl{
@@ -1257,5 +1327,9 @@ button {
 
   .xl\:text-xl{
     font-size: 1.333rem;
+  }
+
+  .xl\:leading-\[1\.33\]{
+    line-height: 1.33;
   }
 }
