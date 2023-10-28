@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 
@@ -642,8 +642,8 @@ video {
   width: 91.666667%;
 }
 
-.w-19{
-  width: 152px;
+.w-\[107px\]{
+  width: 107px;
 }
 
 .w-full{
@@ -774,6 +774,10 @@ video {
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .uppercase{
@@ -1299,14 +1303,24 @@ button {
     flex-direction: column-reverse;
   }
 
-  .xl\:px-6{
-    padding-left: 48px;
-    padding-right: 48px;
+  .xl\:px-18{
+    padding-left: 144px;
+    padding-right: 144px;
   }
 
   .xl\:py-3{
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .xl\:px-17{
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+
+  .xl\:px-16{
+    padding-left: 128px;
+    padding-right: 128px;
   }
 
   .xl\:pb-6{
