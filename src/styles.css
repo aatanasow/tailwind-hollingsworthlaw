@@ -72,13 +72,9 @@ body {
   font-size: 22px;
   line-height: 17px;
 }
-.navbar {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 2;
+#features .material-symbols-outlined {
+  font-size: 29px;
+  line-height: 18px;
 }
 
 button {
@@ -104,9 +100,6 @@ button {
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
-  /* .navbar {
-    padding: 1em 1.5em;
-  } */
   .menu-container {
     background: #fff;
     position: absolute;
@@ -220,9 +213,6 @@ button {
   .buttons {
     display: none;
   }
-  .navbar {
-    padding: 0 2.25rem;
-  }
 
   .mega-menu > li {
     padding: 0 0.3rem;
@@ -324,8 +314,5 @@ button {
 @media screen and (min-width: 1280px) {
   .mega-menu > li {
     padding: 0 0.5rem;
-  }
-  .navbar {
-    padding: 0 4.5rem;
   }
 }

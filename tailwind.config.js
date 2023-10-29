@@ -12,14 +12,14 @@ module.exports = {
       "3xl": "1900px",
     },
     fontSize: {
-      sm: "0.778rem",
-      base: "1rem",
-      xl: "1.333rem",
-      "2xl": "1.722rem",
-      "3xl": "2.222rem",
-      "4xl": "2.944rem",
-      "5xl": "3.833rem",
-      "6xl": "5.056rem",
+      sm: "0.778rem", //14px
+      base: "1rem", //18px
+      xl: "1.333rem", //24px
+      "2xl": "1.722rem", //31px
+      "3xl": "2.222rem", //40px
+      "4xl": "2.944rem", //53px
+      "5xl": "3.833rem", //69px
+      "6xl": "5.056rem", //91px
     },
     spacing: {
       0: "0px",

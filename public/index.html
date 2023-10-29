@@ -10,7 +10,9 @@
   </head>
   <body>
     <header class="relative mt-1 w-full bg-white lg:my-2">
-      <nav class="navbar flex flex-col items-center justify-between gap-1 lg:flex-row">
+      <nav
+        class="relative left-0 top-0 z-10 flex w-full flex-col items-center justify-between gap-1 bg-white lg:flex-row lg:px-5 xl:px-10"
+      >
         <div class="h-5 sm:h-6 md:h-7 lg:h-8">
           <a href="#"><img src="img/hollingsworth-logo.svg" class="h-full" alt="" /></a>
         </div>
@@ -210,7 +212,7 @@
       </nav>
     </header>
 
-    <!--Hero Section-->
+    <!-- Hero Section-->
     <section id="hero" class="bg-cGrey-90">
       <!--Flex Container-->
       <div class="container mx-auto flex flex-col items-center justify-center px-3 pb-3 xl:pb-6">
@@ -249,7 +251,7 @@
         </div>
 
         <svg
-          style="background-color: white"
+          class="bg-cBlue-10"
           x="0px"
           y="0px"
           viewBox="0 0 1600 54"
@@ -263,6 +265,141 @@
             }
           </style>
           <polygon class="st0" points="807.3,54 1600,0 0,0 792.7,54 " />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Features Section-->
+    <section id="features" class="bg-cBlue-10">
+      <div class="mx-auto px-3 py-10 lg:px-5 xl:px-10">
+        <div class="grid grid-cols-1 gap-x-3 gap-y-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="group relative border border-cLightBlue-90 bg-white px-3 py-3 leading-tight xl:py-4"
+          >
+            <a href="#">
+              <div class="flex flex-row items-center justify-center gap-4 lg:flex-col lg:gap-3">
+                <div class="flex w-2/6 justify-end group-hover:opacity-75 lg:w-auto">
+                  <img src="img/icon-our-firm.svg" alt="" class="w-10 object-center" />
+                </div>
+                <div
+                  class="flex w-4/6 flex-col items-start gap-1 lg:w-auto lg:items-center lg:gap-3"
+                >
+                  <div class="flex flex-col items-start gap-1 lg:items-center lg:text-center">
+                    <h3 class="font-accent text-xl font-bold uppercase text-cBlue-100 lg:text-2xl">
+                      OUR FIRM
+                    </h3>
+                    <p class="text-base font-semibold text-cGrey-80 lg:text-[21px]">
+                      Meet our team
+                    </p>
+                  </div>
+                  <div class="flex items-center text-cOrange-110">
+                    <p class="text-base font-bold uppercase">more</p>
+                    <span class="material-symbols-outlined"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="group relative border border-cLightBlue-90 bg-white px-3 py-3 leading-tight xl:py-4"
+          >
+            <a href="#">
+              <div class="flex flex-row items-center justify-center gap-4 lg:flex-col lg:gap-3">
+                <div class="flex w-2/6 justify-end group-hover:opacity-75 lg:w-auto">
+                  <img src="img/icon-recognition.svg" alt="" class="w-10 object-center" />
+                </div>
+                <div
+                  class="flex w-4/6 flex-col items-start gap-1 lg:w-auto lg:items-center lg:gap-3"
+                >
+                  <div class="flex flex-col items-start gap-1 lg:items-center lg:text-center">
+                    <h3 class="font-accent text-xl font-bold uppercase text-cBlue-100 lg:text-2xl">
+                      recognition
+                    </h3>
+                    <p class="text-base font-semibold text-cGrey-80 lg:text-[21px]">
+                      Certification and awards
+                    </p>
+                  </div>
+                  <div class="flex items-center text-cOrange-110">
+                    <p class="text-base font-bold uppercase">more</p>
+                    <span class="material-symbols-outlined"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="group relative border border-cLightBlue-90 bg-white px-3 py-3 leading-tight xl:py-4"
+          >
+            <a href="#">
+              <div class="flex flex-row items-center justify-center gap-4 lg:flex-col lg:gap-3">
+                <div class="flex w-2/6 justify-end group-hover:opacity-75 lg:w-auto">
+                  <img src="img/icon-practice-areas.svg" alt="" class="w-10" />
+                </div>
+                <div
+                  class="flex w-4/6 flex-col items-start gap-1 lg:w-auto lg:items-center lg:gap-3"
+                >
+                  <div class="flex flex-col items-start gap-1 lg:items-center lg:text-center">
+                    <h3 class="font-accent text-xl font-bold uppercase text-cBlue-100 lg:text-2xl">
+                      practice areas
+                    </h3>
+                    <p class="text-base font-semibold text-cGrey-80 lg:text-[21px]">
+                      Our areas of practice
+                    </p>
+                  </div>
+                  <div class="flex items-center text-cOrange-110">
+                    <p class="text-base font-bold uppercase">more</p>
+                    <span class="material-symbols-outlined"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="group relative border border-cLightBlue-90 bg-white px-3 py-3 leading-tight xl:py-4"
+          >
+            <a href="#">
+              <div class="flex flex-row items-center justify-center gap-4 lg:flex-col lg:gap-3">
+                <div class="flex w-2/6 justify-end group-hover:opacity-75 lg:w-auto">
+                  <img src="img/icon-results.svg" alt="" class="w-10 object-center" />
+                </div>
+                <div
+                  class="flex w-4/6 flex-col items-start gap-1 lg:w-auto lg:items-center lg:gap-3"
+                >
+                  <div class="flex flex-col items-start gap-1 lg:items-center lg:text-center">
+                    <h3 class="font-accent text-xl font-bold uppercase text-cBlue-100 lg:text-2xl">
+                      results
+                    </h3>
+                    <p class="text-base font-semibold text-cGrey-80 lg:text-[21px]">
+                      Settlements and Verdicts
+                    </p>
+                  </div>
+                  <div class="flex items-center text-cOrange-110">
+                    <p class="text-base font-bold uppercase">more</p>
+                    <span class="material-symbols-outlined"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <svg
+          class="bg-white"
+          x="0px"
+          y="0px"
+          viewBox="0 0 1600 54"
+          width="100%"
+          height="54px"
+          preserveAspectRatio="none"
+        >
+          <style type="text/css">
+            .st1 {
+              fill: #e7eef3;
+            }
+          </style>
+          <polygon class="st1" points="807.3,54 1600,0 0,0 792.7,54 " />
         </svg>
       </div>
     </section>
