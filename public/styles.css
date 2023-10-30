@@ -618,6 +618,10 @@ video {
   margin-right: auto;
 }
 
+.mb-5{
+  margin-bottom: 40px;
+}
+
 .mt-1{
   margin-top: 8px;
 }
@@ -654,6 +658,22 @@ video {
   height: 100%;
 }
 
+.max-h-\[400px\]{
+  max-height: 400px;
+}
+
+.max-h-full{
+  max-height: 100%;
+}
+
+.min-h-\[250px\]{
+  min-height: 250px;
+}
+
+.min-h-\[240px\]{
+  min-height: 240px;
+}
+
 .w-10{
   width: 80px;
 }
@@ -678,12 +698,12 @@ video {
   width: 100%;
 }
 
-.w-auto{
-  width: auto;
-}
-
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .flex-grow{
@@ -711,20 +731,16 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .items-start{
   align-items: flex-start;
 }
 
-.items-end{
-  align-items: flex-end;
-}
-
 .items-center{
   align-items: center;
-}
-
-.items-stretch{
-  align-items: stretch;
 }
 
 .justify-end{
@@ -778,6 +794,11 @@ video {
   background-color: rgb(231 238 243 / var(--tw-bg-opacity));
 }
 
+.bg-cGrey-10{
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 231 232 / var(--tw-bg-opacity));
+}
+
 .bg-cGrey-5{
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 243 / var(--tw-bg-opacity));
@@ -793,6 +814,11 @@ video {
   background-color: rgb(27 41 50 / var(--tw-bg-opacity));
 }
 
+.bg-cOrange-110{
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 182 147 / var(--tw-bg-opacity));
+}
+
 .bg-cOrange-120{
   --tw-bg-opacity: 1;
   background-color: rgb(178 162 130 / var(--tw-bg-opacity));
@@ -803,9 +829,49 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-cLightBlue-110{
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 149 167 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'img\/experience-compensation\.jpg\'\)\]{
+  background-image: url('img/experience-compensation.jpg');
+}
+
+.bg-\[url\(\'img\/experience-trust\.jpg\'\)\]{
+  background-image: url('img/experience-trust.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-center{
   -o-object-position: center;
      object-position: center;
+}
+
+.p-3{
+  padding: 24px;
+}
+
+.p-5{
+  padding: 40px;
+}
+
+.px-2{
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .px-3{
@@ -813,19 +879,9 @@ video {
   padding-right: 24px;
 }
 
-.px-4{
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
 .py-1{
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.py-10{
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .py-2{
@@ -838,16 +894,6 @@ video {
   padding-bottom: 24px;
 }
 
-.px-1{
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.px-2{
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .py-5{
   padding-top: 40px;
   padding-bottom: 40px;
@@ -855,6 +901,18 @@ video {
 
 .pb-3{
   padding-bottom: 24px;
+}
+
+.pb-2{
+  padding-bottom: 16px;
+}
+
+.pb-1{
+  padding-bottom: 8px;
+}
+
+.pt-5{
+  padding-top: 40px;
 }
 
 .text-center{
@@ -873,8 +931,8 @@ video {
   font-size: 2.222rem;
 }
 
-.text-\[21px\]{
-  font-size: 21px;
+.text-4xl{
+  font-size: 2.944rem;
 }
 
 .text-base{
@@ -917,9 +975,22 @@ video {
   line-height: 1.25;
 }
 
+.leading-normal{
+  line-height: 1.5;
+}
+
+.leading-relaxed{
+  line-height: 1.625;
+}
+
 .text-cBlue-100{
   --tw-text-opacity: 1;
   color: rgb(10 85 135 / var(--tw-text-opacity));
+}
+
+.text-cBlue-120{
+  --tw-text-opacity: 1;
+  color: rgb(8 68 108 / var(--tw-text-opacity));
 }
 
 .text-cGrey-80{
@@ -953,6 +1024,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-wrap:before {
@@ -1337,6 +1411,10 @@ button {
     height: 48px;
   }
 
+  .sm\:min-h-\[340px\]{
+    min-height: 340px;
+  }
+
   .sm\:w-auto{
     width: auto;
   }
@@ -1345,38 +1423,47 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:pb-3{
-    padding-bottom: 24px;
-  }
-
-  .sm\:pb-6{
-    padding-bottom: 48px;
-  }
-
-  .sm\:pb-2{
-    padding-bottom: 16px;
-  }
-
   .sm\:pb-4{
     padding-bottom: 32px;
   }
 }
 
 @media (min-width: 768px){
-  .md\:mt-3{
-    margin-top: 24px;
+  .md\:mt-2{
+    margin-top: 16px;
   }
 
   .md\:h-7{
     height: 56px;
   }
 
+  .md\:min-h-\[440px\]{
+    min-height: 440px;
+  }
+
   .md\:w-3\/5{
     width: 60%;
   }
 
-  .md\:w-auto{
-    width: auto;
+  .md\:py-8{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .md\:pb-4{
+    padding-bottom: 32px;
+  }
+
+  .md\:pt-8{
+    padding-top: 64px;
+  }
+
+  .md\:text-left{
+    text-align: left;
+  }
+
+  .md\:text-3xl{
+    font-size: 2.222rem;
   }
 }
 
@@ -1398,8 +1485,36 @@ button {
     height: 64px;
   }
 
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:w-auto{
     width: auto;
+  }
+
+  .lg\:w-2\/5{
+    width: 40%;
+  }
+
+  .lg\:w-3\/5{
+    width: 60%;
+  }
+
+  .lg\:w-1\/5{
+    width: 20%;
+  }
+
+  .lg\:w-4\/5{
+    width: 80%;
+  }
+
+  .lg\:w-1\/3{
+    width: 33.333333%;
+  }
+
+  .lg\:w-2\/3{
+    width: 66.666667%;
   }
 
   .lg\:grid-cols-4{
@@ -1435,19 +1550,22 @@ button {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .lg\:p-5{
+    padding: 40px;
+  }
+
   .lg\:px-5{
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .lg\:py-9{
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-
   .lg\:py-8{
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  .lg\:pb-5{
+    padding-bottom: 40px;
   }
 
   .lg\:pb-\[15px\]{
@@ -1458,20 +1576,12 @@ button {
     padding-top: 0px;
   }
 
-  .lg\:pb-6{
-    padding-bottom: 48px;
+  .lg\:pb-8{
+    padding-bottom: 64px;
   }
 
-  .lg\:pb-4{
-    padding-bottom: 32px;
-  }
-
-  .lg\:pb-3{
-    padding-bottom: 24px;
-  }
-
-  .lg\:pb-5{
-    padding-bottom: 40px;
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:text-center{
@@ -1493,10 +1603,6 @@ button {
   .lg\:text-xl{
     font-size: 1.333rem;
   }
-
-  .lg\:text-\[21px\]{
-    font-size: 21px;
-  }
 }
 
 @media (min-width: 1280px){
@@ -1508,12 +1614,20 @@ button {
     margin-top: 80px;
   }
 
+  .xl\:mt-3{
+    margin-top: 24px;
+  }
+
   .xl\:mt-8{
     margin-top: 64px;
   }
 
   .xl\:flex-col-reverse{
     flex-direction: column-reverse;
+  }
+
+  .xl\:p-10{
+    padding: 80px;
   }
 
   .xl\:px-10{
@@ -1536,6 +1650,11 @@ button {
     padding-bottom: 32px;
   }
 
+  .xl\:py-10{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .xl\:pb-6{
     padding-bottom: 48px;
   }
@@ -1548,6 +1667,10 @@ button {
     font-size: 3.833rem;
   }
 
+  .xl\:text-\[21px\]{
+    font-size: 21px;
+  }
+
   .xl\:text-base{
     font-size: 1rem;
   }
@@ -1556,11 +1679,17 @@ button {
     font-size: 1.333rem;
   }
 
-  .xl\:text-\[21px\]{
-    font-size: 21px;
+  .xl\:text-4xl{
+    font-size: 2.944rem;
   }
 
   .xl\:leading-\[1\.33\]{
     line-height: 1.33;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:w-4\/5{
+    width: 80%;
   }
 }
