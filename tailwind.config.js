@@ -94,6 +94,10 @@ module.exports = {
         "cGrey-20": "#CCCFD1",
         "cGrey-10": "#E6E7E8",
         "cGrey-5": "#F2F2F3",
+        cError: "#CB5940",
+        cSuccess: "#96CB40",
+        cWarning: "#CB8B40",
+        cInfo: "#40AACB",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
