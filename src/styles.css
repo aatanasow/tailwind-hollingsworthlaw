@@ -193,7 +193,7 @@ button {
   }
 
   .dropdown > div,
-  .nodropdown > div,
+  .no-dropdown > div,
   .sub-dropdown > div {
     cursor: pointer;
     padding: 0.5em;
@@ -281,7 +281,7 @@ button {
   }
 
   .dropdown > div,
-  .nodropdown > div {
+  .no-dropdown > div {
     border-bottom: 3px #fff solid;
     transition: 0.3s;
   }
