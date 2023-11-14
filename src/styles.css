@@ -35,6 +35,15 @@ body {
   @apply text-cOrange-60 underline;
 }
 
+.st0 {
+  fill: #1b2932;
+}
+.st1 {
+  fill: #e7eef3;
+}
+.st2 {
+  fill: #6d95a7;
+}
 /* Hamburger menu */
 
 .hamburger {

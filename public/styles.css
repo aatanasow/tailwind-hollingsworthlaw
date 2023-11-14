@@ -755,10 +755,6 @@ video {
   gap: 32px;
 }
 
-.gap-3{
-  gap: 24px;
-}
-
 .gap-x-3{
   -moz-column-gap: 24px;
        column-gap: 24px;
@@ -825,14 +821,14 @@ video {
   background-color: rgb(178 162 130 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-cOrange-30{
   --tw-bg-opacity: 1;
   background-color: rgb(245 239 227 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'img\/experience-compensation\.jpg\'\)\]{
@@ -1048,6 +1044,18 @@ body {
   --tw-text-opacity: 1;
   color: rgb(236 223 200 / var(--tw-text-opacity));
   text-decoration-line: underline;
+}
+
+.st0 {
+  fill: #1b2932;
+}
+
+.st1 {
+  fill: #e7eef3;
+}
+
+.st2 {
+  fill: #6d95a7;
 }
 
 /* Hamburger menu */
@@ -1397,11 +1405,6 @@ button {
 .hover\:bg-cOrange-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(223 202 163 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:-translate-y-2{
-  --tw-translate-y: -16px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:-translate-y-1{
