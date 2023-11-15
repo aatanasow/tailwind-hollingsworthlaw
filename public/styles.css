@@ -703,6 +703,10 @@ video {
   max-width: 28rem;
 }
 
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
@@ -760,6 +764,14 @@ video {
   gap: 32px;
 }
 
+.gap-5{
+  gap: 40px;
+}
+
+.gap-3{
+  gap: 24px;
+}
+
 .gap-x-3{
   -moz-column-gap: 24px;
        column-gap: 24px;
@@ -775,10 +787,6 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .border{
@@ -849,6 +857,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'img\/cta-bg\.jpg\'\)\]{
+  background-image: url('img/cta-bg.jpg');
+}
+
 .bg-\[url\(\'img\/experience-compensation\.jpg\'\)\]{
   background-image: url('img/experience-compensation.jpg');
 }
@@ -859,6 +871,14 @@ video {
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .object-contain{
@@ -883,11 +903,6 @@ video {
 .px-3{
   padding-left: 24px;
   padding-right: 24px;
-}
-
-.px-4{
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .px-7{
@@ -915,6 +930,11 @@ video {
   padding-bottom: 40px;
 }
 
+.py-6{
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .pb-1{
   padding-bottom: 8px;
 }
@@ -935,6 +955,10 @@ video {
   text-align: center;
 }
 
+.align-top{
+  vertical-align: top;
+}
+
 .font-accent{
   font-family: Oswald, sans-serif;
 }
@@ -945,6 +969,10 @@ video {
 
 .text-3xl{
   font-size: 2.222rem;
+}
+
+.text-4xl{
+  font-size: 2.944rem;
 }
 
 .text-base{
@@ -1014,11 +1042,6 @@ video {
   color: rgb(53 65 73 / var(--tw-text-opacity));
 }
 
-.text-cGrey-90{
-  --tw-text-opacity: 1;
-  color: rgb(27 41 50 / var(--tw-text-opacity));
-}
-
 .text-cLightBlue-100{
   --tw-text-opacity: 1;
   color: rgb(121 165 186 / var(--tw-text-opacity));
@@ -1054,22 +1077,10 @@ video {
   color: rgb(129 136 141 / var(--tw-placeholder-opacity));
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-none{
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.transition-transform{
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .transition{
@@ -1080,12 +1091,14 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.duration-150{
-  transition-duration: 150ms;
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .ease-in-out{
@@ -1148,6 +1161,16 @@ body {
 
 .st3 {
   fill: #fff;
+}
+
+#cta:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
 }
 
 /* Hamburger menu */
@@ -1504,11 +1527,6 @@ button {
   color: rgb(203 89 64 / var(--tw-text-opacity));
 }
 
-.hover\:bg-cGrey-90:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 41 50 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-cOrange-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(223 202 163 / var(--tw-bg-opacity));
@@ -1522,11 +1540,6 @@ button {
 .hover\:text-cGrey-90:hover{
   --tw-text-opacity: 1;
   color: rgb(27 41 50 / var(--tw-text-opacity));
-}
-
-.hover\:text-cOrange-120:hover{
-  --tw-text-opacity: 1;
-  color: rgb(178 162 130 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -1612,8 +1625,17 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:px-7{
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
   .sm\:pb-4{
     padding-bottom: 32px;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.333rem;
   }
 }
 
@@ -1634,9 +1656,18 @@ button {
     width: 60%;
   }
 
+  .md\:w-auto{
+    width: auto;
+  }
+
   .md\:py-8{
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  .md\:px-7{
+    padding-left: 56px;
+    padding-right: 56px;
   }
 
   .md\:pb-2{
@@ -1752,6 +1783,11 @@ button {
     padding-right: 40px;
   }
 
+  .lg\:py-11{
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
   .lg\:py-8{
     padding-top: 64px;
     padding-bottom: 64px;
@@ -1791,6 +1827,10 @@ button {
 
   .lg\:text-xl{
     font-size: 1.333rem;
+  }
+
+  .lg\:text-3xl{
+    font-size: 2.222rem;
   }
 }
 
