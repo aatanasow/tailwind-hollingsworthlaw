@@ -34,7 +34,9 @@ body {
 #experience .bg-cLightBlue-110 a {
   @apply text-cOrange-60 underline;
 }
-
+.footer-link {
+  @apply transition duration-500 ease-out hover:text-cOrange-100;
+}
 .st0 {
   fill: #1b2932;
 }
